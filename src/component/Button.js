@@ -12,6 +12,7 @@ const Button = ({ color, name, onClick }) => {
       className={`inline-block px-6 py-3 my-0 font-custom text-2xl text-darkBlue no-underline border border-solid  cursor-pointer bg-white shadow-${color} transform transition duration-300 hover:translate-y-2 hover:translate-y-2`}
     >
       {name}
+      
     </button>
   );
 };

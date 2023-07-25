@@ -19,8 +19,9 @@ const Navbar = () => {
       <p className="text-darkBlue text-5xl font-custom px-20 ">Bright</p>
       <div className="text-darkBlue text-5xl font-custom text-[32px] flex justify-between items-center w-[50%]  mr-14">
         <Link to="/">Home</Link>
-        <Link to="/">Courses</Link>
+        <Link to="/Courses">Courses</Link>
         <Link to="/">Pricing</Link>
+        <Link to="/StartQuiz">Quiz</Link>
         <p>Name</p>
         <div className="border border-blackish bg-yellow w-[65px] h-[65px] rounded-full relative">
           <img

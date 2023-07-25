@@ -8,12 +8,12 @@ const WelcomeProfile = () => {
       <div>
         <Titles title={"Welcome back Moatez!"} />
         <FormProfile />
-      </div>
+      </div> 
 
-      <div className="text-center h-[600px] relative">
+      <div className="text-center  mr-20 h-[600px] relative">
         <Titles title={"Badges"} />
         <img className="w-[500px]" src="badge.png"></img>
-        <p className="text-white font-custom text-7xl w-40 text-center absolute bottom-52 right-48">Level 06</p>
+        <p className="text-white font-custom text-7xl w-52 text-center absolute bottom-56 right-36">Level 06</p>
       </div>
     </div>
   );

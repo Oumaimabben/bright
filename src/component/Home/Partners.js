@@ -1,7 +1,9 @@
 import React from "react";
 import Titles from "../Titles";
-
+import { useEffect , useRef } from "react";
 const Partners = () => {
+  
+
   return (
     <section className="pl-20">
       <Titles title={"Our partners"} />
@@ -13,6 +15,7 @@ const Partners = () => {
         to bridge the gap between education and employment, providing a direct
         pathway to job opportunities for its users.
       </p>
+      
       <div className="flex items-center  gap-28 mt-3.5 mb-36">
         <div className="justify-center ">
           <img className="w-[169px] h-[169px] " src="microsoft.png"></img>
