@@ -14,25 +14,32 @@ const TopCathegories = () => {
     { name: "Politics", color: "yellow"},
   ];
   return (
-    <section className="h-[660px] bg-greey pl-20 flex py-12">
-      <div>
+    <section className="lg:h-[670px] max-lg:h-[800px] bg-greey lg:pl-20 max-lg:p-4 lg:flex  lg:gap-10 xl:gap-32 py-12">
+      <div >
         <Titles title={"Top categories"} />
-        <p className="text-blak text-[24px] text-start font-montserrat font-normal w-[420px] mt-14 mb-16">
+        <p className="text-blak lg:text-[24px] max-lg:text-[16px] lg:text-start max-lg:text-center font-montserrat font-normal lg:w-[420px] max-lg:min-w-[300px] max-lg:mx-auto mt-14 mb-16 ">
           With Bright, the limit is the sky as we put our best to provide you
           with all possible learning categories from dev to design to history
           and art, psychology and soft skills, and many other categories in
           order to keep everything in the reach of your click. Get started now!
         </p>
-        <Button name={"Browse courses"} color={"yellow"}  />
+        <div className="max-lg:hidden">
+        <Button name={"Browse courses"} color={"yellow"}  /> 
+        </div>
+        
       </div>
 
       
-      <div className="grid grid-cols-2 gap-6  h-[310px] w-[600px]  mt-36 ml-52 ">
+      <div className="grid grid-cols-2 gap-6  h-[310px] lg:w-[600px] max-lg:max-w-[600px] max-lg:mx-auto   lg:mt-36  ">
         
         {buttons.map((button , index) => (
           <Button key={index} name={button.name} color={button.color} width={"307px"}/>
         ))} 
       </div>
+      <div className="lg:hidden text-center mt-6">
+        <Button name={"Browse courses"} color={"yellow"}  /> 
+        </div>
+        
     </section>
   );
 };

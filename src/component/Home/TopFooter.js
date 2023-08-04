@@ -9,50 +9,52 @@ const TopFooter = () => {
     setemail(event.target.value);
   };
   return (
-    <div className="h-[447px] bg-greey pt-20 ">
-      <h2 className="text-blak text-5xl font-custom font-normal text-center w-[743px] mx-auto">
+    <div className="h-[447px] bg-greey lg:pt-20 relative">
+      <img src="Group.svg" alt="" className="absolute left-0 top-0 w-[60%] md:hidden"></img>
+      <img
+          className=" w-[25px]  absolute top-0 right-20 md:hidden"
+          src="Rectangle2.png" alt=""
+        ></img>
+      <img
+          className="w-[85px] absolute top-4 right-0 md:hidden"
+          src="Vector2.png " alt=""
+        ></img>
+      <h2 className="text-blak lg:text-5xl max-lg:text-[16px] font-custom font-normal text-center max-lg:pt-14 lg:w-[743px] max-lg:max-w-[400px] mx-auto">
         Subscribe to our newsletter in order to get the latest news and offers
         from Bright
       </h2>
-      <div className="flex items-center justify-center gap-8 mt-20 relative">
-        {/* <input
-          type="email"
-          className="w-[520px] h-16 px-4 border border-solid border-blackish bg-white  focus:outline-none   placeholder-gray-500 placeholder-opacity-50 text-2xl font-montserrat font-normal"
-          placeholder="E-mail address"
-        /> */}
+      <div className="lg:flex lg:items-center lg:justify-center max-lg:text-center gap-8 mt-14 relative">
+        
         <input
-          class="border  border-blackish px-4  shadow-shdInset  w-[520px] h-16  font-monteserrat font-normal text-2xl focus:outline-none   placeholder-gray-500 placeholder-opacity-50"
+          class="border  border-grey px-4  shadow-shdInset  lg:max-w-[520px] max-lg:[310px] max-lg:mb-4 h-14  font-monteserrat font-normal text-[20px] focus:outline-none   placeholder-gray-500 placeholder-opacity-50"
           placeholder="E-mail address"
           type="text"
           value={email}
           onChange={handleChangeemail}
         />
-        {/*  <div className="absolute bottom-[0.5px] left-96 h-[4px] w-[518px]  bg-yellow"></div> */}
+        
+        <div>
         <Button name={"Subscribe"} color={"yellow"} />
+        </div>
+        
       </div>
-      {/* <div className="relative mt-20">
-        <img
-          className=" w-[50px] absolute bottom-72 left-48"
-          src="Rectangle1.png"
-        ></img>
-        <img className="w-[212px] bottom-0 absolute" src="Vector1.png"></img>
-      </div> */}
+      
 
-      <div className="relative mt-36">
+      <div className="relative mt-36 max-md:hidden">
         <img
-          className=" w-[50px] absolute bottom-36 right-48"
-          src="Rectangle2.png"
+          className=" w-[50px]  absolute bottom-36 right-48"
+          src="Rectangle2.png" alt=""
         ></img>
         <img
-          className="w-[212px] absolute bottom-0 right-0"
-          src="Vector2.png"
+          className="w-[212px] absolute bottom-0 right-0 "
+          src="Vector2.png " alt=""
         ></img>
         <div className="relative ">
           <img
-            className=" absolute bottom-2 left-6 w-[315px] h-[294px]"
-            src="Asset.png"
+            className=" absolute bottom-2 left-6 w-[315px] h-[294px]  md:w-[250px] md:h-[220px]"
+            src="Asset.png" alt=""
           ></img>
-          <img src="Group.svg" className="absolute left-0 bottom-0"></img>
+          <img src="Group.svg" alt="" className="absolute left-0 bottom-0 "></img>
         </div>
       </div>
     </div>

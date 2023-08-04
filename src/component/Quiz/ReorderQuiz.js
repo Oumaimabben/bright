@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import { DragDropContext, Droppable, Draggable } from 'react-beautiful-dnd';
 
 
@@ -69,7 +69,7 @@ const ReorderQuiz = (props) => {
                       
           
                       <p>{sentence}</p>
-                      <img src="menu.svg"></img>
+                      <img src="menu.svg" alt="menu icon"></img>
                     </li>
                   )}
                 </Draggable>

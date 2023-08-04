@@ -14,7 +14,8 @@ module.exports = {
         lightGray: "rgba(44, 52, 57, 0.48)",
         lightBlack:"rgba(44, 52, 57, 0.61)",
         red:"hsla(354, 74%, 47%, 1)",
-        blur:"rgba(23, 23, 23, 0.53)"
+        blur:"rgba(23, 23, 23, 0.53)",
+        blue:"#A0C6E8",
       },
       fontFamily: {
         custom: ['Caprasimo', 'sans-serif'],
@@ -22,12 +23,13 @@ module.exports = {
       },
 
       boxShadow: {
-        purp:'-6px 6px 0 hsl(242.022, 85%, 79%) ',
-        red:'-6px 6px 0 hsla(354, 74%, 47%, 1)',
-        yellow:'-6px 6px 0 hsl(54,97,71)',
+        custom: '-2px -1px 16px -1px rgba(91,84,84,0.75)',
+        purp:'-5px 5px 0 hsl(242.022, 85%, 79%) ',
+        red:'-5px 5px 0 hsla(354, 74%, 47%, 1)',
+        yellow:'-5px 5px 0 hsl(54,97,71)',
         shdInset : 'inset 0 -4px 0 rgba(253, 238, 109, 1)',
         shdInsetPurp : 'inset 0 -4px 0 hsl(242.022, 85%, 79%)',
-        //shdInset:'inset 0 -8px 6px -6px rgba(253, 238, 109, 1)',
+       
       },
       keyframes: {
 
@@ -41,7 +43,7 @@ module.exports = {
 
       },animation: {
 
-        'slide-infinite': 'slide 10s infinite linear',
+        'slide-infinite': 'slide 25s infinite linear',
 
       },
       

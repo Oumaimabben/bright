@@ -1,6 +1,6 @@
 import React from "react";
-import Titles from "../Titles";
-import { useEffect, useState } from "react";
+
+import {  useState } from "react";
 import Button from "../Button";
 const Courses = () => {
   const [search, setSearch] = useState("");
@@ -13,7 +13,7 @@ const Courses = () => {
       <div className="bg-blur h-[480px] relative">
         <img
           className="w-[100%] absolute inset-0 w-full h-full object-cover z-[-1]"
-          src="graduation.png"
+          src="graduation.png" alt="graduation image"
         ></img>
         <h3 className="text-[54px] font-custom font-normal  text-center text-white  absolute top-1/4 w-[950px] left-1/4 ">
           Graduate now online from the top universities worldwide

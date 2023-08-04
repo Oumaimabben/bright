@@ -2,17 +2,17 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <section className="bg-greey h-[420px]  px-16 p-[70px]">
-      <div className=" flex justify-between ">
+    <section className="bg-greey lg:h-[420px] max-lg:h-[500px]  lg:px-16 lg:p-[70px] ">
+      <div className=" lg:flex lg:justify-between max-lg:text-center">
         <div>
-          <h4 className="text-blackish text-8xl font-custom  ">Bright</h4>
-          <p className="text-base text-blackish font-montserrat text-start w-[348px] h-[87px] mt-2">
+          <h4 className="text-blackish lg:text-8xl max-lg:text-5xl font-custom  ">Bright</h4>
+          <p className="text-base text-blackish font-montserrat lg:text-start w-[348px] h-[87px] mt-2  max-lg:mx-auto ">
             BRIGHT, an e-learning platform revolutionizes learning with
             interactive education and gamification, making it easier and more
             entertaining.
           </p>
         </div>
-        <div className="text-xl flex justify-between  w-2/5  ">
+        <div className="text-xl flex justify-between  lg:w-2/5 md:w-3/5 sm:w-[70%] max-sm:w-[100%] max-lg:mx-auto max-lg:p-6">
           <div>
             <h5 className="text-blackish font-montserrat font-semibold">
               Site map
@@ -38,8 +38,8 @@ const Footer = () => {
             </div>
           </div>
 
-          <div>
-            <h5 className="text-blackish font-montserrat font-semibold">
+          <div className="max-sm:hidden">
+            <h5 className="text-blackish font-montserrat font-semibold ">
               Product
             </h5>
             <div className="opacity-[.800000011920929]">
@@ -50,7 +50,7 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <div className="text-blackish font-montserrat font-medium text-base flex justify-between mt-20">
+      <div className="text-blackish font-montserrat font-medium text-base flex justify-between mt-20 max-sm:hidden">
         <p >
           Copyright 2023 “Bright” All rights reserved
         </p>

@@ -9,7 +9,7 @@ const Course = () => {
     <div className="w-[70%] bg-blur h-[445px] ">
       <div className="w-[100%] relative h-[550px]   z-[-1]">
         <video >
-          <source src="video-course.mp4" type="video/mp4" />
+          <source src="video-course.mp4" alt="course video" type="video/mp4" />
         </video>
       </div>
       <div className="absolute top-20 pt-20 pl-10  w-[65%]  ">
@@ -24,7 +24,7 @@ const Course = () => {
         <div className="flex items-center  justify-between mt-10">
           <Button name={"Enroll Now"} color={"purp"} />
           <div className="flex items-center  w-[200px] gap-2">
-            <img src="add-circle.svg" ></img>
+            <img src="add-circle.svg" alt="" ></img>
             <p className="text-white font-montserrat text-[18px] font-medium ">Add to wishlist</p>
           </div>
           <p className="text-white font-montserrat text-[18px] font-bold ">Watch introduction</p>
