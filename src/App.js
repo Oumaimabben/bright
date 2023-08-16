@@ -17,10 +17,10 @@ function App() {
     <div className="App overflow-x-hidden">
          <Navbar />   
        {/* <NavLogin/> */}
-      
+       <Course/> 
          <Routes>
            
-            <Route  path="*" element={<Home />} />     
+            {/*  <Route  path="*" element={<Home />} />      */}
           <Route  path="/Profile" element={<Profile />} />
           <Route  path="/Courses" element={<Courses/>} />
           <Route  path="/Quiz" element={<QuizPage/>} />

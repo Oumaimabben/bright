@@ -27,7 +27,7 @@ const CourseComponent = ({ img, title, description, name, price, type , rate }) 
       </p>
 
       <div className="flex  justify-between items-center mt-2">
-        <Button name={"Enroll"} color={"purp"} width={"300px"} />
+        <Button name={"Enroll"} color={"purp"} colorr={"purpp"} />
         <div>
           <p className="text-darkBlue text-[22px] font-custom font-normal ">
             {price} DT

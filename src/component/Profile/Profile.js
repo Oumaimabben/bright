@@ -64,7 +64,7 @@ const Profile = () => {
         />
       </div>
       
-      <Button name={"Log out"} color={"red"}/>
+      <Button name={"Log out"} color={"red"} colorr={"redd"}/>
     </section>
   );
 };

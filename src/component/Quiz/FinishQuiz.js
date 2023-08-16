@@ -27,7 +27,7 @@ const FinishQuiz = () => {
             It's okay to try again, giving up is not!
           </p>
         )}
-        {isFinish ? (<Button name={"Continue"} color={"purp"} />) : <Button name={"Try again"} color={"purp"} />}
+        {isFinish ? (<Button name={"Continue"} color={"purp"} colorr={"purp"}/>) : <Button name={"Try again"} colorr={"purp"} color={"purp"} />}
         
         {!isFinish && <p className="text-darkBlue opacity-[0.6] text-[16px] font-montserrat font-normal tracking-[.24px] my-4">Skip</p>}
       </div>

@@ -23,7 +23,7 @@ const Hero = () => {
           deadlines following your own schedule and time preferences!
         </p>
         <div className="max-lg:hidden relative">
-       <Button name={"Sign up now"} color={"purp"} />
+       <Button name={"Sign up now"} color={"purp"} colorr={"purpp"} />
        <img src="Cursor.svg" className="absolute left-28"></img>
        </div>
       </div>
@@ -37,7 +37,7 @@ const Hero = () => {
         <img className="absolute bottom-[93%] w-6 max-sm:bottom-[95%]" src="starss.svg" alt="star icon"></img> 
       </div>
        <div className="lg:hidden   text-center">
-       <Button name={"Sign up now"} color={"purp"} />
+       <Button name={"Sign up now"} color={"purp"} colorr={"purpp"} />
        </div>
       
 

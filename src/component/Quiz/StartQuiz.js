@@ -34,7 +34,7 @@ const StartQuiz = () => {
         submit
       </p>
 
-       <Button name={"Start"} color={"purp"} onClick={handleStart}/> 
+       <Button name={"Start"} color={"purp"} colorr={"purp"} onClick={handleStart}/> 
       
     </div>
     <Summary/>

@@ -1,10 +1,30 @@
 import React from "react";
-import { useState } from "react";
-
+import { useState , useEffect } from "react";
+import axios from "axios";
 import { Link } from "react-router-dom";
 const Navbar = () => {
   const [open, setOpen] = useState(false);
   const [burgerIcone, setBurgerIcone] = useState(true);
+  const [image , setImage] = useState('Ellipse.png')
+  const [firstname , setFirstName] = useState('')
+  
+  useEffect(() => {
+    const fetchQuestions = async () => {
+      try {
+
+        const response = await axios.get(
+          `http://localhost:8000/Student/64d0e9ae1188959cdd460f18`
+        );
+        setFirstName(response.data.username)
+        setImage(response.data.profileimg)
+        
+      } catch (error) {
+        console.log(error);
+      }
+    };
+
+    fetchQuestions();
+  }, []);
 
   const ClickImage = () => {
     if (!open) {
@@ -31,13 +51,13 @@ const Navbar = () => {
           <Link to="/Courses">Courses</Link>
           <Link to="/">Pricing</Link>
           {/* <Link to="/StartQuiz">Quiz</Link> */}
-          <p>Name</p>
+          <p>{firstname}</p>
           <div
             className={`border border-blackish bg-yellow w-[65px] h-[65px] rounded-full relative  `}
           >
             <img
-              className="w-[60px] h-[60px] mx-auto"
-              src="Ellipse.png"
+              className="w-[60px] h-[60px] mx-auto rounded-full"
+              src={image}
               alt="profile img"
               onMouseEnter={ClickImage} // Run when the mouse enters the div
               //onMouseLeave={ClickImage}
@@ -46,7 +66,7 @@ const Navbar = () => {
 
           {open && (
             <>
-              <div className="w-36 h-28 border border-grey absolute top-28 right-16 z-10 grid items-stretch text-center shadow-yellow">
+              <div className="w-36 h-28 border border-grey bg-white absolute top-28 right-16 z-10 grid items-stretch text-center shadow-yellow">
                 <Link
                   to="/profile"
                   className="text-dark text-[20px] font-custom font-normal my-auto "
@@ -67,8 +87,8 @@ const Navbar = () => {
       )}
       <div className="lg:hidden flex justify-between items-center p-6  w-[100%] h-20 bg-greey relative ">
         <img
-          className="w-[40px] h-[40px]"
-          src="Ellipse.png"
+          className="w-[40px] h-[40px] rounded-full"
+          src={image}
           alt="profile img"
           onClick={ClickImage}
         ></img>
@@ -94,8 +114,8 @@ const Navbar = () => {
           <div className="flex items-center mt-14  ">
             <div className="border border-blackish bg-yellow w-[45px] h-[45px] rounded-full relative mr-4">
               <img
-                className="w-[40px] h-[40px] mx-auto"
-                src="Ellipse.png"
+                className="w-[40px] h-[40px] mx-auto rounded-full"
+                src={image}
                 alt="profile img"
               ></img>
             </div>

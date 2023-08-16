@@ -22,7 +22,7 @@ const Progress = ({ img, title,  name }) => {
      
 
       <div className=" mt-2">
-      <Button name={"Continue"} color={"purp"}/>
+      <Button name={"Continue"} color={"purp"} colorr={"purpp"}/>
         
       </div>
     </div>

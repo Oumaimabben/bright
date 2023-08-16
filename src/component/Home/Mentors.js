@@ -37,7 +37,7 @@ const Mentors = () => {
 
       <div className="flex items-center justify-center ">
         
-        <Button name={"In-Person Course"} color={"purp"} />
+        <Button name={"In-Person Course"} color={"purp"} colorr={"purpp"} />
       </div>
     </section>
   );

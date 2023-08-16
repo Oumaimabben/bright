@@ -213,6 +213,7 @@ const QuizPage = () => {
                   <Button
                     name={"Next"}
                     color={"purp"}
+                    colorr={"purp"}
                     onClick={handleNextQuestion}
                   />
                   <span className="text-darkBlue opacity-[0.6] text-[20px] font-montserrat font-normal tracking-[.3px] ">
@@ -226,6 +227,7 @@ const QuizPage = () => {
                   <Button
                     name={"Submit"}
                     color={"purp"}
+                    colorr={"purp"}
                     onClick={handleSubmitButton}
                   />
                   <span className="text-darkBlue opacity-[0.6] text-[20px] font-montserrat font-normal tracking-[.3px] ">

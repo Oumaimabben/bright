@@ -4,14 +4,14 @@ import Button from "../Button";
 
 const TopCathegories = () => {
   const buttons = [
-    { name: "Web Dev", color: "yellow" },
-    { name: "History", color: "yellow" },
-    { name: "Arts", color: "yellow" },
-    { name: "Soft skills", color: "yellow" },
-    { name: "Design", color: "yellow" },
-    { name: "Psychology", color: "yellow" },
-    { name: "Science", color: "yellow" },
-    { name: "Politics", color: "yellow"},
+    { name: "Web Dev", color: "yellow" , colorr:"yelloww" },
+    { name: "History", color: "yellow" , colorr:"yelloww"},
+    { name: "Arts", color: "yellow" , colorr:"yelloww"},
+    { name: "Soft skills", color: "yellow" , colorr:"yelloww"},
+    { name: "Design", color: "yellow" , colorr:"yelloww"},
+    { name: "Psychology", color: "yellow" , colorr:"yelloww"},
+    { name: "Science", color: "yellow" , colorr:"yelloww"},
+    { name: "Politics", color: "yellow" , colorr:"yelloww"},
   ];
   return (
     <section className="lg:h-[670px] max-lg:h-[800px] bg-greey lg:pl-20 max-lg:p-4 lg:flex  lg:gap-10 xl:gap-32 py-12">
@@ -24,7 +24,7 @@ const TopCathegories = () => {
           order to keep everything in the reach of your click. Get started now!
         </p>
         <div className="max-lg:hidden">
-        <Button name={"Browse courses"} color={"yellow"}  /> 
+        <Button name={"Browse courses"} color={"yellow"} colorr={"yelloww"} /> 
         </div>
         
       </div>
@@ -33,11 +33,11 @@ const TopCathegories = () => {
       <div className="grid grid-cols-2 gap-6  h-[310px] lg:w-[600px] max-lg:max-w-[600px] max-lg:mx-auto   lg:mt-36  ">
         
         {buttons.map((button , index) => (
-          <Button key={index} name={button.name} color={button.color} width={"307px"}/>
+          <Button key={index} name={button.name} color={button.color} colorr={button.colorr} />
         ))} 
       </div>
       <div className="lg:hidden text-center mt-6">
-        <Button name={"Browse courses"} color={"yellow"}  /> 
+        <Button name={"Browse courses"} color={"yellow"} colorr={"yelloww"} /> 
         </div>
         
     </section>

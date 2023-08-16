@@ -5,68 +5,35 @@
 @import url('https://fonts.googleapis.com/css2?family=Caprasimo&display=swap');
 
 
-.brr1 {
-  border-radius: 63px;
-border: 1px solid #000;
-background: #FDEE6D;
-  
+
+.button {
+	--background-color: #005aff;
+	--background-color-dark: #002d81;
+
+	display: inline-block;
+	margin: 0 8px;
+	padding: 10px 16px;
+	font-family: 'Boogaloo', cursive;
+	font-size: 24px;
+	color: #ffffff;
+	text-decoration: none;
+	border: none;
+	outline: none;
+	cursor: pointer;
+	background-color: var(--background-color);
+	box-shadow: 6px 6px 0 var(--background-color-dark);
 }
 
-.brr {
- 
-  border-radius: 60px;
-  background-color : lightgray ;
-  background-position: -31.554px -10.728px / 208.969% 208.969%;
-background-repeat:   no-repeat;
-}
-.f {
-  
-  position:relative;
-}
-.star {
-  position:absolute;
-  
+.button:active {
+	transform: translateX(2px) translateY(2px);
+	box-shadow: 4px 4px 0 var(--background-color-dark);
 }
 
-@media screen and (max-width: 650px) {
-
-  .star {
-    
-    width:40px;
-    left:220px;
-    top:160px;
-  }
-
+.button--secondary {
+	--background-color: #FF00DA;
+	--background-color-dark: #840070;
 }
 
-@media screen and (min-width: 650px) {
 
-  .star {
-    
-    width:60px;
-    left:680px;
-    top:230px;
-  }
 
-}
-@media screen and (min-width: 1024px ) {
-
-  .star {
-    
-    width:70px;
-    left:530px;
-    top:300px;
-  }
-
-}
-@media screen and (min-width: 1150px ) {
-
-  .star {
-    
-    width:70px;
-    left:680px;
-    top:230px;
-  }
-
-}
 

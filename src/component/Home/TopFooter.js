@@ -34,7 +34,7 @@ const TopFooter = () => {
         />
         
         <div>
-        <Button name={"Subscribe"} color={"yellow"} />
+        <Button name={"Subscribe"} color={"yellow"} colorr={"yelloww"} />
         </div>
         
       </div>
